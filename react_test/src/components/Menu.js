@@ -5,7 +5,7 @@ import Button from './Button'
 
 class Menu extends Component{
   render(){
-    const { create1000, create10000, add1000, add10000, remove } = this.props;
+    const { create, add,  remove } = this.props;
     return(
       <div className="menu-container" >
         <div className="logo" >
@@ -15,10 +15,10 @@ class Menu extends Component{
           <h1> Framework </h1>
         </div>
         <div className="buttons-container">
-          <Button id="create1000" className="Btn" funk={create1000} title="Create 1000 rows" />
-          <Button id="create1000" className="Btn" funk={create10000} title="Create 10,000 rows" />
-          <Button id="add1000" className="Btn" funk={add1000} title="Add 1000 rows" />
-          <Button id="add10000" className="Btn" funk={add10000} title="Add 10,000 rows" />
+          <Button id="create1000" className="Btn" funk={() => create(1000) } title="Create 1000 rows" />
+          <Button id="create1000" className="Btn" funk={() => {create(10000)}} title="Create 10,000 rows" />
+          <Button id="add1000" className="Btn" funk={() => {add(1000)}} title="Add 1000 rows" />
+          <Button id="add10000" className="Btn" funk={() => {add(10000)}} title="Add 10,000 rows" />
           <Button id="delete" className="Btn" funk={remove} title="Clear" />
         </div>
       </div>
