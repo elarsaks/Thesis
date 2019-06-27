@@ -7,14 +7,6 @@
   margin-top: 60px;
 }
 
-.data-table {
-  width: 1200px;
-  padding-top: 210px;
-  margin-left: auto;
-  margin-right: auto;
-  border-spacing: 2px;
-}
-
 .menu-container {
   position: fixed;
   background-color: white;
@@ -59,6 +51,14 @@ img {
 
 .Btn:hover {
   cursor: pointer;
+}
+
+.data-table {
+  width: 1200px;
+  padding-top: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 2px;
 }
 
 .small-col {

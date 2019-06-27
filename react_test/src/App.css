@@ -1,5 +1,10 @@
 .App {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 
 .menu-container {
@@ -15,7 +20,8 @@
   margin-top: 1px;
 }
 
-.logo {
+img {
+  height: 198px;
   float: left;
 }
 
@@ -23,6 +29,7 @@
   float: left;
   font-size: 35px;
   margin-left: 10px;
+  color: black;
 }
 
 .buttons-container {
@@ -51,8 +58,15 @@
   padding-top: 210px;
   margin-left: auto;
   margin-right: auto;
+  border-spacing: 2px;
 }
 
-.data-row {
+.small-col {
+  width: 200px;
+  background-color: #e0f2f1;
+}
+
+.big-col {
+  width: 1000px;
   background-color: #e0f2f1;
 }

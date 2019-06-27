@@ -27,7 +27,6 @@ function random(max) {
         label: `${A[random(A.length)]} ${B[random(B.length)]} ${C[random(C.length)]}`,
       };
     }
-    console.log(data)
     return data;
   }
 
