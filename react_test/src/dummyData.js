@@ -17,7 +17,6 @@ function random(max) {
     "right", "room", "school", "state", "story", "student", "study", "system", "thing", "time", "water", "way", "week", "woman", "word", "work", "world", "year"
   ];
 
-
   const buildData = function (count) {
     let nextId = 1;
     const data = new Array(count);
@@ -29,6 +28,5 @@ function random(max) {
     }
     return data;
   }
-
 
 export default buildData;

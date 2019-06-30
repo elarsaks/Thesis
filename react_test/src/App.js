@@ -12,7 +12,6 @@ class App extends Component {
 
   create = (amount) => {
     this.setState({ data: buildData(amount) });
-    console.log('called')
   }
 
   add = (amount) => {

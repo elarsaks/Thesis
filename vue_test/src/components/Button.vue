@@ -1,9 +1,4 @@
-<template>
-  <button class="Btn" > {{ text }} </button>
-</template>
 
-<script>
-  export default {
-    props: ['text']
-  }
-</script>
+<template functional>
+  <button class="Btn" slot="text"> {{ props.text }} </button>
+</template>

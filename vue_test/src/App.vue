@@ -17,7 +17,6 @@ import Menu from './components/Menu.vue'
 import Row from './components/Row.vue'
 import buildData from './dummyData'
 
-
 export default {
   name: 'app',
   data() {
@@ -31,18 +30,15 @@ export default {
     Row
   },
   methods: {
-
     addRows( amount) {
       this.numberOfRows = this.numberOfRows + amount;
       let data = this.data;
       this.data = data.concat(buildData(amount))
     },
-
     createRows( amount) {
       this.numberOfRows = amount;
       this.data = buildData(this.numberOfRows);
     },
-
     removeRows() {
       this.numberOfRows = 0;
       this.data = [];

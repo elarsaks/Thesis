@@ -1,14 +1,7 @@
-<template>
-  <div>
-    <tr>
-      <td class="small-col" >{{rowId}}</td>
-      <td class="big-col" >{{rowLabel}}</td>
-    </tr>
-  </div>
-</template>
 
-<script>
-export default  {
-  props: ['rowId', 'rowLabel'],
-}
-</script>
+<template functional>
+    <tr>
+      <td class="small-col" slot="rowId" >{{props.rowId}}</td>
+      <td class="big-col" slot="rowLabel" >{{props.rowLabel}}</td>
+    </tr>
+</template>
