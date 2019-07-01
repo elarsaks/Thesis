@@ -19,12 +19,7 @@
 </template>
 
 <script>
-import Button from './Button.vue'
-
   export default  {
     props: ['createRows', 'addRows', 'removeRows'],
-    components: {
-      Button,
-    }
   }
 </script>
