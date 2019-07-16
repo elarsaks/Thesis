@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter} from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +7,6 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 })
 
 export class MenuComponent {
-
   @Output() addEvent = new EventEmitter<number>();
   @Output() createEvent = new EventEmitter<number>();
   @Output() removeEvent = new EventEmitter<number>();
